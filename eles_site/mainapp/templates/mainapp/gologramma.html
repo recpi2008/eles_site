@@ -1,0 +1,45 @@
+{% extends 'mainapp/base.html' %}
+
+
+{% load static %}
+
+<head>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css_golog/style.css' %}">
+        <script
+                src="https://code.jquery.com/jquery-3.6.0.slim.js"
+                integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+                crossorigin="anonymous"></script>
+    {% endblock %}
+</head>
+
+
+{% block content %}
+    <body>
+
+    <main id=app>
+
+        {#      <a href="{% url 'index' %}"><h1>Главная</h1></a>#}
+
+        <section class="cards">
+            <div class="card charizard animated"></div>
+            <div class="card pika animated"></div>
+            <div class="card eevee animated"></div>
+            <div class="card mewtwo animated"></div>
+        </section>
+
+
+        <style class="hover"></style>
+
+        <section class="demo">
+            <div class="card"></div>
+            <span class="operator">+</span>
+            <div class="card"><span>iEles</span></div>
+            <span class="operator">+</span>
+            <div class="card"><span>iEles</span></div>
+        </section>
+
+    </main>
+    <script src="{% static 'css_golog/script.js' %}"></script>
+    </body>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+
+<head>
+    <title>Title</title>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/style_foto.css' %}">
+    {% endblock %}
+
+</head>
+
+{% block content %}
+    <body>
+    <section class="section-md bg-periglacial-blue text-center">
+        <div class="shell">
+            <div class="range range-30">
+                <div class="cell-sm-6 cell-md-4">
+
+                    <div class="card card0">
+                        <div class="border">
+                            <h2>Al Pacino</h2>
+                        </div>
+                    </div>
+                    </p><a class="btn-shop" href="cart.html"><span
+                        class="btn-shop-icon fa fa-shopping-cart"></span><span class="btn-shop-text">ADD TO CART</span></a>
+
+                </div>
+                <div class="cell-sm-6 cell-md-4">
+                    <div class="card card1">
+                        <div class="border">
+                            <h2>Ben Stiller</h2>
+                        </div>
+                    </div>
+
+                    </p><a class="btn-shop" href="cart.html"><span
+                        class="btn-shop-icon fa fa-shopping-cart"></span><span class="btn-shop-text">ADD TO CART</span></a>
+
+                </div>
+                <div class="cell-sm-6 cell-md-4">
+                    <div class="card card2">
+        <div class="border">
+          <h2>Patrick Stewart</h2>
+        </div>
+      </div>
+
+                        </p><a class="btn-shop" href="cart.html"><span class="btn-shop-icon fa fa-shopping-cart"></span><span
+                                class="btn-shop-text">ADD TO CART</span></a>
+
+                </div>
+
+            </div>
+            <ul class="pagination-custom">
+                <li class="disabled"><a href="#"></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="ellipsis">...</li>
+                <li><a href="#">12</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    </body>
+{% endblock %}
